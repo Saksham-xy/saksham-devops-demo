@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+install:
+runtime-versions:
+python: 3.12
+
+build:
+commands:
+- echo "Starting Saksham AWS DevOps Build"
+- python --version
+- python app.py
+- echo "Saksham DevOps Build Completed Successfully"
+
+artifacts:
+files:
+- app.py
+- buildspec.yml
